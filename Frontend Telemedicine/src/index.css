@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 .active hr{
     @apply block;
 }
@@ -9,4 +10,9 @@
 .scrollbar-hide {
   -ms-overflow-style: none; 
   scrollbar-width: none; 
+}
+
+:root{
+  --auto: repeat(auto-fill, minmax(200px, 1fr));
+  --primary:#5f6FFF
 }
