@@ -9,6 +9,7 @@ import Contact from "./Pages/Contact";
 import MyAppointment from "./Pages/MyAppointment";
 import Appointment from "./Pages/Appointment";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           element={<Appointment></Appointment>}
         ></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 };
