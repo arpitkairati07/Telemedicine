@@ -6,6 +6,7 @@ import contact_image from './contact_image.png'
 import about_image from './about_image.png'
 import logo from './logo.svg'
 import logo1 from './logo1.svg'
+import Banner from './Banner.jpg'
 import Iconlogo from './Iconlogo.png'
 import dropdown_icon from './dropdown_icon.svg'
 import menu_icon from './menu_icon.svg'
@@ -45,6 +46,7 @@ export const assets = {
     header_img,
     group_profiles,
     logo,
+    Banner,
     logo1,
     Iconlogo,
     chats_icon,

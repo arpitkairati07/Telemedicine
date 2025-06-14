@@ -93,14 +93,18 @@ const MyProfile = () => {
           <p className="font-medium">Gender:</p>
           {isEdit ? (
             <select
-              className="max-w-20 bg-gray-100"
+              className="max-w-20 bg-gray-100 cursor-pointer"
               onChange={(e) =>
                 setUserData((prev) => ({ ...prev, gender: e.target.value }))
               }
               value={setUserData.gender}
             >
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
+              <option className="cursor-pointer" value="Male">
+                Male
+              </option>
+              <option className="cursor-pointer" value="Female">
+                Female
+              </option>
             </select>
           ) : (
             <p className="text-gray-400">{userData.gender}</p>
@@ -108,7 +112,7 @@ const MyProfile = () => {
           <p className="font-medium">BIRTHDAY:</p>
           {isEdit ? (
             <input
-              className="max-w-28 bg-gray-100"
+              className="max-w-28 bg-gray-100 cursor-pointer"
               type="date"
               value={userData.dob}
               onChange={(e) =>
