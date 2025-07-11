@@ -1,9 +1,13 @@
-import React, { createContext } from "react"; 
+import React, { createContext, useState } from "react";
 
 export const AdminContext = createContext();
 
 const AdminContextProvider = (props) => {
-  const value = {}; // You can put shared admin state here later
+  const [atoken, setAToken] = useState(localStorage.getItem('atoken')?localStorage.getItem('atoken'):'');
+  const backend_url = import.meta.env.VITE_BACKEND_URL;
+
+  const value = { atoken, setAToken, backend_url };
+
   return (
     <AdminContext.Provider value={value}>
       {props.children}
