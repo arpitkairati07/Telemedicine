@@ -1,18 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import { createRoot } from "react-dom/client";
 import "./index.css";
+import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
-import AdminContextProvider from "./Context/AdminContext";
-import DoctorContextProvider from "./Context/DoctorContext";
-import AppContextProvider from "./Context/AppContext";
+import AdminContextProvider from "./context/AdminContext.jsx";
+import DoctorContextProvider from "./context/DontorContext.jsx";
+import AppContextProvider from "./context/AppContext.jsx";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <AdminContextProvider>
       <DoctorContextProvider>
         <AppContextProvider>
-        <App />
+          <App />
         </AppContextProvider>
       </DoctorContextProvider>
     </AdminContextProvider>
