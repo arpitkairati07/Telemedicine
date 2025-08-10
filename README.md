@@ -73,19 +73,19 @@ TeleMedicine/
 ## ⚙️ Tech Stack
 
 ### **Frontend:**
-- React.js / Next.js
-- Tailwind CSS / ShadCN UI
+- React.js 
+- Tailwind CSS 
 - Axios for API calls
 
 ### **Backend:**
 - Node.js & Express.js
-- MongoDB / MySQL
+- MongoDB
 - JWT Authentication
-- Payment Gateway (e.g., Razorpay / Stripe)
+- Payment Gateway (e.g., Razorpay )
 
 ### **Admin Panel:**
 - React.js with Admin Dashboard UI
-- Charts for analytics (Recharts / Chart.js)
+- DashBoard
 
 ---
 
