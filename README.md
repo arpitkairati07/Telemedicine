@@ -13,8 +13,11 @@ The platform is built with **three main modules**:
 TeleMedicine/
 │
 ├── Admin/ # Admin dashboard for managing doctors, earnings, and treatment data
+
 ├── Frontend/ # User interface for patients
+
 ├── Backend/ # API and database handling
+
 └── README.md
 
 
